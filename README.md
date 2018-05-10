@@ -64,6 +64,24 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
     * ClearBoosBar - Removes all boss bars on the player's HUD.
     * ActionBar - Sends a message to the player's action bar. (Text)
     * ChatColor - Sets the player's chat color.
+    * Teleport - Teleports a player to the specified location. (Location)
+    * RandomTeleport - Teleports a player to a random location. (Location(s))
+    * TeleportSequence - Teleports a player through the series of locations. (Location(s), Number)
+    * LaunchUp - Launches the player upwards. (Number)
+    * LaunchForward - Launches the player forward. (Number)
+    * LaunchToward - Launches the player towards a location. (Location, Number)
+    * RideEntity - Makes the player ride an entity. (Text)
+    * LaunchProjectile - Launches a projectile from the player. (Item, Text, Number, Location, Particle)
+    * RemoveArrows - Removes all arrows in the players body.
+    * DisguiseAsMob - Disguise the player as a mob. (Item, Text)
+    * DisguiseAsPlayer - Disguise the player as a player. (Text)
+    * DisguiseAsBlock - Disguise the player as a block. (Item, Text, Number)
+    * Undisguise - Undisguises the player.
+    * HideDisguise - Hides the players disguise from themself.
+    * RollBack - Rollback the player's block changes.
+    * AutoRespawn - Respawns a dead player.
+    * Kick - Kicks the player from the plot.
+    * RewardDFC - Rewards the player with DFC.
   * IfPlayer [] - If a player ___, then...
   * Var [] - Set custom variables.
   * IfVar [] - Compare custom variables.
