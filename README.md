@@ -15,8 +15,8 @@ Methods
   * Else [] - Place after an if block for if...else statements.
   * Loop [] - An event that fires for every player, every x amount of ticks.
   * IfGame [] - Conditions not related to players or entities.
-  * Control [] - Break out of repeats, return from functions, and more.
-  * SelectObject [] - Select players, mobs, entities. Code blocks after the Select Object block will target the chosen object.
+  * Control [] - Break out of **Repeats**, return from **Functions**, and more.
+  * SelectObject [] - Select players, mobs, entities. Code blocks after the **Select Object** block will target the chosen object.
   * Function [] - Define custom functions! When called by a **Call Function** block, code will be read from here, then return to the call block.
   * CallFunction [] - Call a custom function. Define functions with the **Function** block. This can be a way of splitting up long lines!
   
