@@ -36,7 +36,7 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
     PlayerAction ['GiveItems'] (Item(WATER_BUCKET)) <%default_player%>;
     
   PlayerEvent ['Quit']
-    PlayerAction ['SendMessage'] (Text('Goodbye %default%')) <%all_player%>;
+    PlayerAction ['SendDialogue'] (Text('Goodbye %default%'), Number(1)) <%all_player%>;
   ```
     
  ### Variable Targets
@@ -50,13 +50,23 @@ Variable targets are denoted using `%target_name%`.
   * victim - %victim%
   * _Bind `_entity` or `_player` to target a certain entity class or the default target for the method will be used._
   
+### Parameter Classes
+
+  * Item - define item values
+  * Text - defines string values
+  * Number - define number values
+  * Sound - sound values
+  * Particle - define particle values
+  * Var - define custom variables
+  * Value - internal variables
+  
 ### Indentation
 When starting with an *event*, *loop* or *function* you must indent all of the code included in the event/loop/function.
 ```javascript
 PlayerEvent ['Sneak']
   /* Indented code will denote it is part of the PlayerEvent */
-  PlayerAction ['LaunchUp'] (20) <%default_player%>
-PlayerAction ['LaunchForward'] (20) <%default_player%> /* this is not part of the PlayerEvent, and does not function; is not part of any event, loop, or function */
+  PlayerAction ['LaunchUp'] (Number(20)) <%default_player%>
+PlayerAction ['LaunchForward'] (Number(20)) <%default_player%> /* this is not part of the PlayerEvent, and does not function; is not part of any event, loop, or function */
 ```
   
 ### File System
