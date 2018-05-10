@@ -70,4 +70,4 @@ PlayerAction ['LaunchForward'] (Number(20)) <%default_player%> /* this is not pa
 ```
   
 ### File System
-TextDF files end in the file extension `.tdf`. One `.tdf` file is equivalent to one plot in DiamondFire. You cannot transfer or load variables or functions between files.
+  TextDF files end in the file extension `.tdf`. One `.tdf` file is equivalent to one plot in DiamondFire. You cannot transfer or load variables or functions between files.
