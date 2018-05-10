@@ -37,6 +37,33 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
     * Walk - When a player walks.
     * FallDamage - When a player takes fall damage.
   * PlayerAction [] - Do something to the player.
+    * GiveItem - Give a player an item(s). (Item(s))
+    * SetItem - Give a player an item(s) in direct slots. (Item, Item, Ect)
+    * SetArmor - Equips the set of armor to the player. (Item, Item, Item, Item)
+    * SetOffHand - Sets an item in the player's offhand. (Item)
+    * RemoveItem - Removes an item(s) from the player's inventory. (Item(s))
+    * ClearInventory - Clears the player inventory.
+    * ShowMenu - Opens an inventory menu. (Item(s));
+    * CloseMenu - Closes an open inventory menu.
+    * ExpandMenu - Expands an open inventory menu. (Item(s))
+    * SaveInventory - Saves the player's inventory to a stored value.
+    * LoadInventory - Loads the player's inventory from a stored value.
+    * SetSlot - Sets the player's currently selected slot. (Number)
+    * GiveRandomItem - Gives a player a random item. (Item(s))
+    * SendMessage - Sends a message to the targeted player. (Text)
+    * SendDialogue - Sends a series of messages to the targeted player. (Text, Number)
+    * SendHover - Sends a message with hover text. (Text, Text)
+    * ClearChat - Clears the players chat.
+    * Sound - Plays a sound effect to the targeted player. (Sound, Number, Location)
+    * SoundSequence - Plays a series of sounds to the targeted player. (Sound, Number, Location)
+    * StopSound - Stops all sounds being played to the targeted player.
+    * Particle - Shows a particle effect to the targeted player. (Particle, Location, Number)
+    * Title - Sends a title to the targeted player. (Text, Text, Number, Number, Number)
+    * ChatTag - Sets the player's chat tag. (Text)
+    * BossBar - Adds a boss health bar to the player's HUD. (Text, Number, Item)
+    * ClearBoosBar - Removes all boss bars on the player's HUD.
+    * ActionBar - Sends a message to the player's action bar. (Text)
+    * ChatColor - Sets the player's chat color.
   * IfPlayer [] - If a player ___, then...
   * Var [] - Set custom variables.
   * IfVar [] - Compare custom variables.
