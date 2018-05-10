@@ -41,14 +41,14 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
     
  ### Variable Targets
  
-Variable targets are denoted using `%target_name%`.
+Variable targets are denoted using `%target_class%`.
   * default - %default%
   * all - %all%
   * selection - %selection%
   * attacker - %damager%
   * killer - %killer%
   * victim - %victim%
-  * _Bind `_entity` or `_player` to target a certain entity class or the default target for the method will be used._
+  * _Bind `_entity` or `_player` to target a specific entity class or the default target for the method will be used._
   
 ### Parameter Classes
 
