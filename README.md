@@ -59,3 +59,5 @@ PlayerEvent ['Sneak']
 PlayerAction ['LaunchForward'] (20) <%default_player%> /* this is not part of the PlayerEvent, and does not function; is not part of any event, loop, or function */
 ```
   
+### File System
+TextDF files end in the file extension `.tdf`. One `.tdf` file is equivalent to one plot in DiamondFire.
