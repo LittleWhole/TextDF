@@ -4,6 +4,38 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
 ### Methods
   
   * PlayerEvent [] - When the player does something...
+    * Join - When a player joins the plot.
+    * Quit - When a player leaves the game.
+    * RightClick - When a player right clicks.
+    * LeftClick - When a player left clicks.
+    * Respawn - When a player respawns after dying.
+    * PlayKillPlay - When a player kills another player.
+    * PlayDeath - When a player dies (not by another player)
+    * Sneak - When a player sneaks.
+    * Unsneak - When a player stops sneaking.
+    * PlayDamagePlay - When a player damages another player.
+    * ProjDamagePlay - When a projectile hits a player.
+    * PlayDamage - When a player takes damage.
+    * PlayKillMob - When a player kills a mob.
+    * MobKillPlay -When a mob kills a player.
+    * PlayDamageMob - When a player damages a mob.
+    * MobDamagePlay - When a mob damages a player.
+    * ProjHit - When a projectile hits something.
+    * Command - When a player does a command.
+    * ClickItem - When a player clicks an item in an inventory menu.
+    * ClickItemOwn - When a player clicks an item inside their inventory.
+    * RightClickEntity - When a player right clicks an entity.
+    * PlaceBlock - When a player places a block.
+    * BreakBlock - When a player breaks a block.
+    * PickItem - When a player picks up an item.
+    * DropItem - When a player drops an item.
+    * ConsumeItem - When a player eats/drinks an item.
+    * SwapHands - When a player swaps held items.
+    * ChangeSlot - When a player changes their held slot.
+    * Sprint - When a player starts sprinting.
+    * StopSprint - When a player stops sprinting.
+    * Walk - When a player walks.
+    * FallDamage - When a player takes fall damage.
   * PlayerAction [] - Do something to the player.
   * IfPlayer [] - If a player ___, then...
   * Var [] - Set custom variables.
@@ -68,14 +100,13 @@ Variable targets are denoted using `%target_class%`.
   * Number - define number values
   * Sound - sound values
   * Particle - define particle values
-  * Var - define custom variables _use a variable name instead of a text string to define nested variables_
+  * Var - define custom variables _Bind `_nest(var)` to define a nested variable_ 
   * Value - internal variables
   
   ```javascript
   PlayerEvent ['Join']
-    Var ['Set'] (Var('var1'), Text('example')) <%global%>;]
-    Var ['Set'] (Var(Var('var1')), Text('example2')) <%global%>;
-    Var ['Set'] (Var(Var('var1')) + 'var1'), Text('example3')) <%global%>;
+    Var ['Set'] (Var('var1'), Text('example')) <%global%>;
+    Var ['Set'] (Var_nest(var1), Text('example2')) <%global%>;
     PlayerAction ['SendMessage'] (Var(example)) <%all%>;
   ```
   
