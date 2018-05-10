@@ -100,13 +100,14 @@ Variable targets are denoted using `%target_class%`.
   * Number - define number values
   * Sound - sound values
   * Particle - define particle values
-  * Var - define custom variables _Bind `_nest(var)` to define a nested variable_ 
+  * Var - define custom variables _use a variable name instead of a text string to define nested variables_
   * Value - internal variables
   
   ```javascript
   PlayerEvent ['Join']
-    Var ['Set'] (Var('var1'), Text('example')) <%global%>;
-    Var ['Set'] (Var_nest(var1), Text('example2')) <%global%>;
+    Var ['Set'] (Var('var1'), Text('example')) <%global%>;]
+    Var ['Set'] (Var(Var('var1')), Text('example2')) <%global%>;
+    Var ['Set'] (Var(Var('var1')) + 'var1'), Text('example3')) <%global%>;
     PlayerAction ['SendMessage'] (Var(example)) <%all%>;
   ```
   
