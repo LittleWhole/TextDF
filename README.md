@@ -29,6 +29,7 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   * target - <>
   * end statement - ;
   * seperate condition - ,
+  * variable target - %%
   ```
   PlayerEvent ["Join"]
     PlayerAction ["GiveItems"] (Item(WATER_BUCKET)) <%default_player%>;
@@ -39,6 +40,7 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
     
  ### Variable Targets
  
+ Variable targets are denoted in `%target_name%`.
   * default - %default%
   * all - %all%
   * selection - %selection%
