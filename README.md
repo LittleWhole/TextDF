@@ -30,6 +30,7 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   * end statement - ;
   * seperate condition - ,
   * variable targets %%
+  * NOT !
   * comment /* */
   ```javascript
   PlayerEvent ['Join']
@@ -37,6 +38,15 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
     
   PlayerEvent ['Quit']
     PlayerAction ['SendDialogue'] (Text('Goodbye %default%'), Number(1)) <%all_player%>;
+  ```
+  NOT example:
+  ```javascript
+  PlayerEvent ['Join']
+    IfPlayer[!'NameEquals'] (Text('Jeremaster')) <%default_player%> {
+      PlayerAction ['SendMessage'] (Text('Someone joined...')) <%all_player%>;
+    } Else {
+      PlayerAction ['GiveItems'] (Item(DIAMOND, 64)) <%all_player%>;
+    }
   ```
     
  ### Variable Targets
@@ -65,8 +75,8 @@ When starting with an *event*, *loop* or *function* you must indent all of the c
 ```javascript
 PlayerEvent ['Sneak']
   /* Indented code will denote it is part of the PlayerEvent */
-  PlayerAction ['LaunchUp'] (Number(20)) <%default_player%>
-PlayerAction ['LaunchForward'] (Number(20)) <%default_player%> /* this is not part of the PlayerEvent, and does not function; is not part of any event, loop, or function */
+  PlayerAction ['LaunchUp'] (Number(20)) <%default_player%>;
+PlayerAction ['LaunchForward'] (Number(20)) <%default_player%>; /* this is not part of the PlayerEvent, and does not function; is not part of any event, loop, or function */
 ```
   
 ### File System
