@@ -31,10 +31,10 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   * seperate condition - ,
   ```
   PlayerEvent ["Join"]
-    PlayerAction ["GiveItems"] (Item(WATER_BUCKET)) <%default%>;
+    PlayerAction ["GiveItems"] (Item(WATER_BUCKET)) <%default_player%>;
     
   PlayerEvent ["Quit"]
-    PlayerAction ["SendMessage"] (Text('Goodbye %default%')) <%all%>;
+    PlayerAction ["SendMessage"] (Text('Goodbye %default%')) <%all_player%>;
   ```
     
  ### Variable Targets
@@ -45,4 +45,4 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   * attacker - %damager%
   * killer - %killer%
   * victim - %victim%
-  * _Bind `_entity` or `_player` to target a certain or both will be targeted_
+  * _Bind `_entity` or `_player` to target a certain or the default target for the method will be used._
