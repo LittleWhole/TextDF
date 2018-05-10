@@ -30,7 +30,7 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   * end statement - ;
   * seperate condition - ,
   * variable targets %%
-  * NOT !
+  * NOT !!
   * comment /* */
   ```javascript
   PlayerEvent ['Join']
@@ -42,7 +42,7 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   NOT example:
   ```javascript
   PlayerEvent ['Join']
-    IfPlayer[!'NameEquals'] (Text('Jeremaster')) <%default_player%> {
+    IfPlayer[!'NameEquals'!] (Text('Jeremaster')) <%default_player%> {
       PlayerAction ['SendMessage'] (Text('Someone joined...')) <%all_player%>;
     } Else {
       PlayerAction ['GiveItems'] (Item(DIAMOND, 64)) <%all_player%>;
@@ -58,6 +58,7 @@ Variable targets are denoted using `%target_class%`.
   * attacker - %damager%
   * killer - %killer%
   * victim - %victim%
+  * global - %global%
   * _Bind `_entity` or `_player` to target a specific entity class or the default target for the method will be used._
   
 ### Parameter Classes
@@ -67,8 +68,15 @@ Variable targets are denoted using `%target_class%`.
   * Number - define number values
   * Sound - sound values
   * Particle - define particle values
-  * Var - define custom variables
+  * Var - define custom variables _Bind `_nest(var)` to define a nested variable_ 
   * Value - internal variables
+  
+  ```javascript
+  PlayerEvent ['Join']
+    Var ['Set'] (Var('var1'), Text('example')) <%global%>;
+    Var ['Set'] (Var_nest(var1), Text('example2')) <%global%>;
+    PlayerAction ['SendMessage'] (Var(example)) <%all%>;
+  ```
   
 ### Indentation
 When starting with an *event*, *loop* or *function* you must indent all of the code included in the event/loop/function.
