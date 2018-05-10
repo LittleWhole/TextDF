@@ -39,10 +39,10 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
     
  ### Variable Targets
  
-  * default player - %default%
-  * all players - %all%
+  * default - %default%
+  * all - %all%
   * selection - %selection%
-  * default entity - %entity%
   * attacker - %damager%
   * killer - %killer%
   * victim - %victim%
+  * _Bind `_entity` or `_player` to target a certain or both will be targeted_
