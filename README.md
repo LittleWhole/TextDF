@@ -1,7 +1,7 @@
 # TextDF
 TextDF is a way of expressing the DiamondFire code system in text formatting.
 
-Methods
+### Methods
   
   * PlayerEvent [] - When the player does something...
   * PlayerAction [] - Do something to the player.
@@ -20,7 +20,7 @@ Methods
   * Function [] - Define custom functions! When called by a **Call Function** block, code will be read from here, then return to the call block.
   * CallFunction [] - Call a custom function. Define functions with the **Function** block. This can be a way of splitting up long lines!
   
-Syntax
+### Syntax
 
   * parameters - ()
   * grouping - {}
@@ -37,7 +37,7 @@ Syntax
     PlayerAction ["SendMessage"] (Text('Goodbye %default%')) <%all%>;
   ```
     
- Variable Targets
+ ### Variable Targets
  
   * default player - %default%
   * all players - %all%
