@@ -33,7 +33,7 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   * comment /* */
   ```javascript
   PlayerEvent ['Join']
-    PlayerAction ['GiveItems'] (Item(WATER_BUCKET)) <%default_player%>;
+    PlayerAction ['GiveItems'] (Item(WATER_BUCKET), Item(LAVA_BUCKET), Item(MILK_BUCKET)) <%default_player%>;
     
   PlayerEvent ['Quit']
     PlayerAction ['SendDialogue'] (Text('Goodbye %default%'), Number(1)) <%all_player%>;
