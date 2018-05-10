@@ -30,11 +30,11 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   * end statement - ;
   * seperate condition - ,
   ```javascript
-  PlayerEvent ["Join"]
-    PlayerAction ["GiveItems"] (Item(WATER_BUCKET)) <%default_player%>;
+  PlayerEvent ['Join']
+    PlayerAction ['GiveItems'] (Item(WATER_BUCKET)) <%default_player%>;
     
-  PlayerEvent ["Quit"]
-    PlayerAction ["SendMessage"] (Text('Goodbye %default%')) <%all_player%>;
+  PlayerEvent ['Quit']
+    PlayerAction ['SendMessage'] (Text('Goodbye %default%')) <%all_player%>;
   ```
     
  ### Variable Targets
