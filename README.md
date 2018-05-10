@@ -34,7 +34,8 @@ Syntax
     PlayerAction ["GiveItems"] (Item(WATER_BUCKET)) <%default%>;
     
   PlayerEvent ["Quit"]
-    PlayerAction ["SendMessage"] (Text('Goodbye %default%')) <%all%>;```
+    PlayerAction ["SendMessage"] (Text('Goodbye %default%')) <%all%>;
+  ```
     
  Variable Targets
  
