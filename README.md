@@ -48,7 +48,7 @@ Variable targets are denoted using `%target_name%`.
   * attacker - %damager%
   * killer - %killer%
   * victim - %victim%
-  * _Bind `_entity` or `_player` to target a certain or the default target for the method will be used._
+  * _Bind `_entity` or `_player` to target a certain entity class or the default target for the method will be used._
   
 ### Indentation
 When starting with an *event*, *loop* or *function* you must indent all of the code included in the event/loop/function.
