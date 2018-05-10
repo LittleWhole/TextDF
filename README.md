@@ -42,15 +42,31 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   * IfVar [] - Compare custom variables.
   * EntityEvent [] - When an entity does something...
   * IfEntity [] - If an entity ___, then...
+    * IsType - If an entity is type. (SpawnEgg)
+    * CustomName - If a mobs name equals. (Text)
+    * IsStandingOn - If a mob is standing on a block. (Block or Location)
+    * IsNear - If a mob is near a location. (Location, Number)
+    * IsMob - If an entity is a mob.
+    * IsProj - If an entity is a projectile.
   * EntityAction [] - Do something to an entity,
   * Repeat [] - Repeat code multiple times.
+    * NTimes - Repeats code (N) times. (Number)
+    * Forever - Loops forever.
+    * RepeatWhile - Repeats while a condition is true.
   * Else [] - Place after an if block for if...else statements.
-  * Loop [] - An event that fires for every player, every x amount of ticks.
+  * Loop [] - An event that fires for every player, every x amount of ticks. (Number)
   * IfGame [] - Conditions not related to players or entities.
+    * BlockEquals - If a block is. (Location, Block)
+    * ContainerHas - If a countainer has an item. (Location, Item)
+    * SignContains - If a sign contains text. (Location, Text)
   * Control [] - Break out of **Repeats**, return from **Functions**, and more.
+    * EndRepeat - Stops a repeating sequence.
+    * Skip - Skip to the next repetition of a repeating sequence.
+    * Return - Return from a function.
+    * End - Completely stop reading code.`
   * SelectObject [] - Select players, mobs, entities. Code blocks after the **Select Object** block will target the chosen object.
-  * Function [] - Define custom functions! When called by a **Call Function** block, code will be read from here, then return to the call block.
-  * CallFunction [] - Call a custom function. Define functions with the **Function** block. This can be a way of splitting up long lines!
+  * Function [] - Define custom functions! When called by a **Call Function** block, code will be read from here, then return to the call block. (text)
+  * CallFunction [] - Call a custom function. Define functions with the **Function** block. This can be a way of splitting up long lines! (text)
   
 ### Syntax
 
