@@ -189,7 +189,7 @@ Variable targets are denoted using `%target_class%`.
   
   ```javascript
   PlayerEvent ['Join']
-    Var ['Set'] (Var('var1'), Text('example')) <%global%>;]
+    Var ['Set'] (Var('var1'), Text('example')) <%global%>;
     Var ['Set'] (Var(Var('var1')), Text('example2')) <%global%>;
     Var ['Set'] (Var(Var('var1')) + 'var1'), Text('example3')) <%global%>;
     PlayerAction ['SendMessage'] (Var(example)) <%all%>;
