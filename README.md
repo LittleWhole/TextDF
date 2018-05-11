@@ -158,7 +158,7 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   NOT example:
   ```javascript
   PlayerEvent ['Join']
-    IfPlayer[!'NameEquals'!] (Text('Jeremaster')) <%default_player%> {
+    IfPlayer [!'NameEquals'!] (Text('Jeremaster')) <%default_player%> {
       PlayerAction ['SendMessage'] (Text('Someone joined...')) <%all_player%>;
     } Else {
       PlayerAction ['GiveItems'] (Item(DIAMOND, 64)) <%all_player%>;
