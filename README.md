@@ -87,10 +87,10 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   * IfVar [] - Compare custom variables.
   * EntityEvent [] - When an entity does something...
   * IfEntity [] - If an entity ___, then...
-    * IsType - If an entity is type. (SpawnEgg)
+    * IsType - If an entity is type. (Item(Spawn Egg))
     * CustomName - If a mobs name equals. (Text)
-    * IsStandingOn - If a mob is standing on a block. (Block or Location)
-    * IsNear - If a mob is near a location. (Location, Number)
+    * IsStandingOn - If a mob is standing on a block. (Item(Block) or Location)
+    * IsNear - If a mob is near a location. (Location, Number(Range))
     * IsMob - If an entity is a mob.
     * IsProj - If an entity is a projectile.
   * EntityAction [] - Do something to an entity,
@@ -101,7 +101,7 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
   * Else [] - Place after an if block for if...else statements.
   * Loop [] - An event that fires for every player, every x amount of ticks. (Number)
   * IfGame [] - Conditions not related to players or entities.
-    * BlockEquals - If a block is. (Location, Block)
+    * BlockEquals - If a block is. (Location, Item(Block))
     * ContainerHas - If a countainer has an item. (Location, Item)
     * SignContains - If a sign contains text. (Location, Text)
   * Control [] - Break out of **Repeats**, return from **Functions**, and more.
