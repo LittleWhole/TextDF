@@ -194,9 +194,9 @@ Variable targets are denoted using `%target_class%`.
     Var ['Set'] (Var(Var('var1')) + 'var1'), Text('example3')) <%global%>;
     PlayerAction ['SendMessage'] (Var(example)) <%all%>;
   ```
-  #### Parameter Sub-Classes
+  #### Parameter SubClasses
   
-     ##### Sound
+    ##### Sound
      * AmbientCave
      * FireAmbient
      * FireExtinguish
