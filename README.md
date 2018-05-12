@@ -793,6 +793,34 @@ Variable targets are denoted using `%target_class%`.
      * LUCK
      * UNLUCK
      
+    ##### Particle Effects
+    
+     * Smoke
+     * LargeSmoke
+     * Flame
+     * AngryVillager
+     * HappyVillager
+     * Heart
+     * MusicNote
+     * FireworkSparkles
+     * Lava
+     * Barrier
+     * SmallExplosion
+     * HugeExplosion
+     * LavaDrip
+     * WaterDrip
+     * DragonBreath
+     * Slime
+     * Portal
+     * EnchantmentRunes
+     * Redstone
+     * Crit
+     * MagicCrit
+     * DamageHearts
+     * Cloud
+     * Spit
+     * Totem
+     
 ### Indentation
 When starting with an *event*, *loop* or *function* you must indent all of the code included in the event/loop/function.
 ```javascript
