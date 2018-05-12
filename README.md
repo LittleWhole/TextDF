@@ -762,6 +762,37 @@ Variable targets are denoted using `%target_class%`.
      * NewSlot
      * OldSlot
      * Command
+     
+    ##### Potion Effects
+    
+     * SPEED
+     * SLOW
+     * FAST_DIGGING
+     * SLOW_DIGGING
+     * INCREASE_DAMAGE
+     * HEAL
+     * HARM
+     * JUMP
+     * CONFUSION
+     * REGENERATION
+     * DAMAGE_RESISTANCE
+     * FIRE_RESISTANCE
+     * WATER_BREATHING
+     * INVISIBILITY
+     * BLINDNESS
+     * NIGHT_VISION
+     * HUNGER
+     * WEAKNESS
+     * POISON
+     * WITHER
+     * HEALTH_BOOST
+     * ABSORPTION
+     * SATURATION
+     * GLOWING
+     * LEVITATION
+     * LUCK
+     * UNLUCK
+     
 ### Indentation
 When starting with an *event*, *loop* or *function* you must indent all of the code included in the event/loop/function.
 ```javascript
