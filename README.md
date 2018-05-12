@@ -405,6 +405,66 @@ Variable targets are denoted using `%target_class%`.
      * WoodHit
      * WoodPlace
      * WoodStep
+     * BigFall
+     * Burn
+     * Death
+     * Drink
+     * Eat
+     * Explode
+     * ExtinguishFire
+     * Hurt
+     * SmallFall
+     * Splash
+     * Swim
+     * ArmorStandBreak
+     * ArmorStandFall
+     * ArmorStandHit
+     * ArmorStandPlace
+     * ArrowHit
+     * ArrowHitPlay
+     * ArrowShoot
+     * BobberSplash
+     * BobberRetrieve
+     * BobberThrow
+     * EggThrow
+     * EnderEyeLaunch
+     * EyeDeath
+     * PearlThrow
+     * SbowThrow
+     * BatAmbient
+     * BatDeath
+     * BatHurt
+     * BatLoop
+     * BatTakeoff
+     * BlazeAmbient
+     * BlazeBurn
+     * BlazeDeath
+     * BlazeHurt
+     * BlazeShoot
+     * CatAmbient
+     * CatDeath
+     * CatHiss
+     * CatHurt
+     * CatPurr
+     * CatPurreow
+     * ChickenAmbient
+     * ChickenDeath
+     * ChickenEgg
+     * ChickenHurt
+     * ChickenStep
+     * CowAmbient
+     * CowDeath
+     * CowHurt
+     * CowMilk
+     * CowStep
+     * CreeperDeath
+     * CreeperHurt
+     * CreeperPrimed
+     * DonkeyAmbient
+     * DonkeyAngry
+     * DonkeyChest
+     * DonkeyDeath
+     * DonkeyHurt
 ### Indentation
 When starting with an *event*, *loop* or *function* you must indent all of the code included in the event/loop/function.
 ```javascript
