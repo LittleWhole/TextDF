@@ -737,6 +737,31 @@ Variable targets are denoted using `%target_class%`.
      * LlamaSpit
      * LlamaStep
      * LlamaSwag
+     
+    ##### Values
+    
+     * CurrentHealth
+     * MaximumHealth
+     * CurrentFoodLevel
+     * CurrentSaturationLevel
+     * CurrentXPLevel
+     * CurrentXP%
+     * CurrentArmorPoints
+     * CurrentFireTicks
+     * CurrentAirRemaining
+     * CurrentEyeLocation
+     * CurrentHeldSlot
+     * TargetBlockLocation
+     * X-Coordinate
+     * Y-Coordinate
+     * Z-Coordinate
+     * Pitch
+     * Yaw
+     * TotalPlayerCount
+     * EventDamage
+     * NewSlot
+     * OldSlot
+     * Command
 ### Indentation
 When starting with an *event*, *loop* or *function* you must indent all of the code included in the event/loop/function.
 ```javascript
