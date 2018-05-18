@@ -22,7 +22,7 @@ Function ['lbting']
     GameAction ['CreateHolo'] (Var('holoMsg', <%selection_player%>), Location(-3524, 64, 2874)) <>;
     Var ['Set'] (Var('topKills', <%global%>), Var('kills', <%selection_player%)) <%global%>;
     Var ['Set'] (Var('p1Winner', <%global%>), Text('%selection_player%')) <%global%>;
-    Control ['End'] () <%all_playe%>;
+    Control ['End'] () <%all_player%>;
   }
   IfVar ['Greater'] (Var('kills', <%selection_player%>), Var('p2Kills', <%global%>)) <%all_player%> {
     IfPlayer [!'NameEquals'!] (Var('p1Winner', %all_player%>)) <%all_player%> {
