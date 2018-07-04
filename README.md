@@ -2,25 +2,9 @@
 TextDF is a way of expressing the DiamondFire code system in text formatting.
 
 ### Methods
-  * IfPlayer [] - If a player ___, then...
   * Var [] - Set custom variables.
   * IfVar [] - Compare custom variables.
-  * IfEntity [] - If an entity ___, then...
-    * IsType - If an entity is type. (Item(Spawn Egg))
-    * CustomName - If a mobs name equals. (Text)
-    * IsStandingOn - If a mob is standing on a block. (Item(Block) or Location)
-    * IsNear - If a mob is near a location. (Location, Number(Range))
-    * IsMob - If an entity is a mob.
-    * IsProj - If an entity is a projectile.
-  * Repeat [] - Repeat code multiple times.
-    * NTimes - Repeats code (N) times. (Number)
-    * Forever - Loops forever.
-    * RepeatWhile - Repeats while a condition is true.
   * Else [] - Place after an if block for if...else statements.
-  * IfGame [] - Conditions not related to players or entities.
-    * BlockEquals - If a block is. (Location, Item(Block))
-    * ContainerHas - If a countainer has an item. (Location, Item)
-    * SignContains - If a sign contains text. (Location, Text)
   * Control [] - Break out of **Repeats**, return from **Functions**, and more.
     * EndRepeat - Stops a repeating sequence.
     * Skip - Skip to the next repetition of a repeating sequence.
@@ -48,10 +32,7 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
     * EntityCondition - All non-player entities that satisfy a condition.
     * RandomSelect - A randomly selected player or entity from the current selection. (Number)
     * FilterSelect - All objects in the current selection that satisfy a condition.
-    * CurrentSelect - The currently selected object.
     * None - Nothing (all code blocks will use defaults).
-  * Function [] - Define custom functions! When called by a **Call Function** block, code will be read from here, then return to the call block. (text)
-  * CallFunction [] - Call a custom function. Define functions with the **Function** block. This can be a way of splitting up long lines! (text)
   
 ### Syntax
 
