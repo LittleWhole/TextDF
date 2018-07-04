@@ -2,90 +2,9 @@
 TextDF is a way of expressing the DiamondFire code system in text formatting.
 
 ### Methods
-  
-  * PlayerEvent [] - When the player does something...
-    * Join - When a player joins the plot.
-    * Quit - When a player leaves the game.
-    * RightClick - When a player right clicks.
-    * LeftClick - When a player left clicks.
-    * Respawn - When a player respawns after dying.
-    * PlayKillPlay - When a player kills another player.
-    * PlayDeath - When a player dies (not by another player)
-    * Sneak - When a player sneaks.
-    * Unsneak - When a player stops sneaking.
-    * PlayDamagePlay - When a player damages another player.
-    * ProjDamagePlay - When a projectile hits a player.
-    * PlayDamage - When a player takes damage.
-    * PlayKillMob - When a player kills a mob.
-    * MobKillPlay -When a mob kills a player.
-    * PlayDamageMob - When a player damages a mob.
-    * MobDamagePlay - When a mob damages a player.
-    * ProjHit - When a projectile hits something.
-    * Command - When a player does a command.
-    * ClickItem - When a player clicks an item in an inventory menu.
-    * ClickItemOwn - When a player clicks an item inside their inventory.
-    * RightClickEntity - When a player right clicks an entity.
-    * PlaceBlock - When a player places a block.
-    * BreakBlock - When a player breaks a block.
-    * PickItem - When a player picks up an item.
-    * DropItem - When a player drops an item.
-    * ConsumeItem - When a player eats/drinks an item.
-    * SwapHands - When a player swaps held items.
-    * ChangeSlot - When a player changes their held slot.
-    * Sprint - When a player starts sprinting.
-    * StopSprint - When a player stops sprinting.
-    * Walk - When a player walks.
-    * FallDamage - When a player takes fall damage.
-  * PlayerAction [] - Do something to the player.
-    * GiveItem - Give a player an item(s). (Item(s))
-    * SetItem - Give a player an item(s) in direct slots. (Item(s))
-    * SetArmor - Equips the set of armor to the player. (Item(Helmet), Item(Chestplate), Item(Leggings), Item(Boots))
-    * SetOffHand - Sets an item in the player's offhand. (Item)
-    * RemoveItem - Removes an item(s) from the player's inventory. (Item(s))
-    * ClearInventory - Clears the player inventory.
-    * ShowMenu - Opens an inventory menu. (Item(s));
-    * CloseMenu - Closes an open inventory menu.
-    * ExpandMenu - Expands an open inventory menu. (Item(s))
-    * SaveInventory - Saves the player's inventory to a stored value.
-    * LoadInventory - Loads the player's inventory from a stored value.
-    * SetSlot - Sets the player's currently selected slot. (Number(1-9 Slot))
-    * GiveRandomItem - Gives a player a random item. (Item(s))
-    * SendMessage - Sends a message to the targeted player. (Text)
-    * SendDialogue - Sends a series of messages to the targeted player. (Text, Number(Delay))
-    * SendHover - Sends a message with hover text. (Text(Message), Text(Hover Text))
-    * ClearChat - Clears the players chat.
-    * Sound - Plays a sound effect to the targeted player. (Sound, Number(Pitch), Location)
-    * SoundSequence - Plays a series of sounds to the targeted player. (Sound, Number(Delay), Location)
-    * StopSound - Stops all sounds being played to the targeted player.
-    * Particle - Shows a particle effect to the targeted player. (Particle, Location, Number(Count))
-    * Title - Sends a title to the targeted player. (Text(Title), Text(Sub-title), Number(Duration), Number(Fade-in), Number(Fade-out))
-    * ChatTag - Sets the player's chat tag. (Text)
-    * BossBar - Adds a boss health bar to the player's HUD. (Text, Number(Health), Item(Wool Color))
-    * ClearBoosBar - Removes all boss bars on the player's HUD.
-    * ActionBar - Sends a message to the player's action bar. (Text)
-    * ChatColor - Sets the player's chat color.
-    * Teleport - Teleports a player to the specified location. (Location)
-    * RandomTeleport - Teleports a player to a random location. (Location(s))
-    * TeleportSequence - Teleports a player through the series of locations. (Location(s), Number(Delay))
-    * LaunchUp - Launches the player upwards. (Number)
-    * LaunchForward - Launches the player forward. (Number)
-    * LaunchToward - Launches the player towards a location. (Location, Number)
-    * RideEntity - Makes the player ride an entity. (Text)
-    * LaunchProjectile - Launches a projectile from the player. (Item, Text(Name), Number, Location, Particle(Trail))
-    * RemoveArrows - Removes all arrows in the players body.
-    * DisguiseAsMob - Disguise the player as a mob. (Item(Spawn Egg), Text(Name))
-    * DisguiseAsPlayer - Disguise the player as a player. (Text)
-    * DisguiseAsBlock - Disguise the player as a block. (Item(Block), Text(Name), Number(Data))
-    * Undisguise - Undisguises the player.
-    * HideDisguise - Hides the players disguise from themself.
-    * RollBack - Rollback the player's block changes.
-    * AutoRespawn - Respawns a dead player.
-    * Kick - Kicks the player from the plot.
-    * RewardDFC - Rewards the player with DFC.
   * IfPlayer [] - If a player ___, then...
   * Var [] - Set custom variables.
   * IfVar [] - Compare custom variables.
-  * EntityEvent [] - When an entity does something...
   * IfEntity [] - If an entity ___, then...
     * IsType - If an entity is type. (Item(Spawn Egg))
     * CustomName - If a mobs name equals. (Text)
@@ -93,13 +12,11 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
     * IsNear - If a mob is near a location. (Location, Number(Range))
     * IsMob - If an entity is a mob.
     * IsProj - If an entity is a projectile.
-  * EntityAction [] - Do something to an entity,
   * Repeat [] - Repeat code multiple times.
     * NTimes - Repeats code (N) times. (Number)
     * Forever - Loops forever.
     * RepeatWhile - Repeats while a condition is true.
   * Else [] - Place after an if block for if...else statements.
-  * Loop [] - An event that fires for every player, every x amount of ticks. (Number)
   * IfGame [] - Conditions not related to players or entities.
     * BlockEquals - If a block is. (Location, Item(Block))
     * ContainerHas - If a countainer has an item. (Location, Item)
