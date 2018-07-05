@@ -3,29 +3,6 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
 
 ### Methods
   * Var [] - Set custom variables.
-  * SelectObject [] - Select players, mobs, entities. Code blocks after the **Select Object** block will target the chosen object.
-    * Default - The main player involved in an event.
-    * DefaultEntity - The main non-player entity involved in an event.
-    * RandomPlay - A randomly selected player.
-    * RandomEntity - A randomly selected non-player entity.
-    * All - Every player on the plot.
-    * AllMobs - Every mob (non-player living entity) on the plot.
-    * AllEntity - Every non-player entity on the plot.
-    * LastSpawned - The most recently spawned mob.
-    * Killer - The killer in kill event.
-    * Damager - The damager in damage events.
-    * Shooter - The shooter in projectile events.
-    * Projectile - The Projectile in projectile events.
-    * Victim - The victim in kill / damage events.
-    * PlayName - The player whose name is in the chest.
-    * MobName - All mobs with the name in the chest.
-    * EntityName - All entities with the name in the chest.
-    * PlayCondition - All players that satisfy a condition.
-    * MobCondition - All mobs that satisfy a condition.
-    * EntityCondition - All non-player entities that satisfy a condition.
-    * RandomSelect - A randomly selected player or entity from the current selection. (Number)
-    * FilterSelect - All objects in the current selection that satisfy a condition.
-    * None - Nothing (all code blocks will use defaults).
   
 ### Syntax
 
