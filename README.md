@@ -1,8 +1,5 @@
 # TextDF
 TextDF is a way of expressing the DiamondFire code system in text formatting.
-
-### Methods
-  * Var [] - Set custom variables.
   
 ### Syntax
 
