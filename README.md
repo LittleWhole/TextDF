@@ -3,12 +3,6 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
 
 ### Methods
   * Var [] - Set custom variables.
-  * Else [] - Place after an if block for if...else statements.
-  * Control [] - Break out of **Repeats**, return from **Functions**, and more.
-    * EndRepeat - Stops a repeating sequence.
-    * Skip - Skip to the next repetition of a repeating sequence.
-    * Return - Return from a function.
-    * End - Completely stop reading code.`
   * SelectObject [] - Select players, mobs, entities. Code blocks after the **Select Object** block will target the chosen object.
     * Default - The main player involved in an event.
     * DefaultEntity - The main non-player entity involved in an event.
