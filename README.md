@@ -59,65 +59,6 @@ Variable targets are denoted using `%target_class%`.
     Var ['Set'] (Var(Var('var1')) + 'var1'), Text('example3')) <%global%>;
     PlayerAction ['SendMessage'] (Var(example)) <%all%>;
   ```
-  #### Parameter SubClasses
-     
-    ##### Potion Effects
-    
-     * SPEED
-     * SLOW
-     * FAST_DIGGING
-     * SLOW_DIGGING
-     * INCREASE_DAMAGE
-     * HEAL
-     * HARM
-     * JUMP
-     * CONFUSION
-     * REGENERATION
-     * DAMAGE_RESISTANCE
-     * FIRE_RESISTANCE
-     * WATER_BREATHING
-     * INVISIBILITY
-     * BLINDNESS
-     * NIGHT_VISION
-     * HUNGER
-     * WEAKNESS
-     * POISON
-     * WITHER
-     * HEALTH_BOOST
-     * ABSORPTION
-     * SATURATION
-     * GLOWING
-     * LEVITATION
-     * LUCK
-     * UNLUCK
-     
-    ##### Particle Effects
-    
-     * Smoke
-     * LargeSmoke
-     * Flame
-     * AngryVillager
-     * HappyVillager
-     * Heart
-     * MusicNote
-     * FireworkSparkles
-     * Lava
-     * Barrier
-     * SmallExplosion
-     * HugeExplosion
-     * LavaDrip
-     * WaterDrip
-     * DragonBreath
-     * Slime
-     * Portal
-     * EnchantmentRunes
-     * Redstone
-     * Crit
-     * MagicCrit
-     * DamageHearts
-     * Cloud
-     * Spit
-     * Totem
      
 ### Indentation
 When starting with an *event*, *loop* or *function* you must indent all of the code included in the event/loop/function.
