@@ -3,7 +3,6 @@ TextDF is a way of expressing the DiamondFire code system in text formatting.
 
 ### Methods
   * Var [] - Set custom variables.
-  * IfVar [] - Compare custom variables.
   * Else [] - Place after an if block for if...else statements.
   * Control [] - Break out of **Repeats**, return from **Functions**, and more.
     * EndRepeat - Stops a repeating sequence.
