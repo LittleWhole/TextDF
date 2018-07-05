@@ -2,7 +2,7 @@
 Function ['JoinRespawn'] ()
   PlayerAction ['Teleport'] (Location_relative(%default, 0, 0, 20, 0, 0)) <%default_player%>;
   PlayerAction ['GiveItems'] (Item(DIAMOND_SWORD), ITEM(DIAMOND_AXE), ITEM(GOLDEN_APPLE, 64)) <%default_player%>;
-  PlayerACTION ['SetOffItem'] (Item(SHIELD)) <%default_player%>;
+  PlayerAction ['SetOffItem'] (Item(SHIELD)) <%default_player%>;
   GameAction ['StartLoop'] ();
   
 PlayerEvent ['Join']
