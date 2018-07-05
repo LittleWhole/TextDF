@@ -61,31 +61,6 @@ Variable targets are denoted using `%target_class%`.
   ```
   #### Parameter SubClasses
      
-    ##### Values
-    
-     * CurrentHealth
-     * MaximumHealth
-     * CurrentFoodLevel
-     * CurrentSaturationLevel
-     * CurrentXPLevel
-     * CurrentXP%
-     * CurrentArmorPoints
-     * CurrentFireTicks
-     * CurrentAirRemaining
-     * CurrentEyeLocation
-     * CurrentHeldSlot
-     * TargetBlockLocation
-     * X-Coordinate
-     * Y-Coordinate
-     * Z-Coordinate
-     * Pitch
-     * Yaw
-     * TotalPlayerCount
-     * EventDamage
-     * NewSlot
-     * OldSlot
-     * Command
-     
     ##### Potion Effects
     
      * SPEED
