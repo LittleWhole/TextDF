@@ -59,6 +59,3 @@ Variable targets are denoted using `%target_class%`.
     Var ['Set'] (Var(Var('var1')) + 'var1'), Text('example3')) <%global%>;
     PlayerAction ['SendMessage'] (Var(example)) <%all%>;
   ```
-  
-### File System
-  * TextDF files end in the file extension `.tdf`. One `.tdf` file is equivalent to one plot in DiamondFire. You cannot transfer or load variables or functions between files.
