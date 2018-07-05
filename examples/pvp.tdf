@@ -21,7 +21,7 @@ PlayerEvent ['Respawn']
   CallFunction ['JoinRespawn'];
   
 Loop [20]
-  GameAction ['SetScObj'] (Text('Kills'));
+  GameAction ['SetObjective'] (Text('Kills'));
   GameAction ['SetScore'] (Text('%default% kills'))
   
   
